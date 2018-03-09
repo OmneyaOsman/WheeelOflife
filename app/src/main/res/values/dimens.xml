@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="space_1">1dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Wheeel Of life</string>
+    <string name="action_settings">Settings</string>
+    <string name="family">Family</string>
+    <string name="religion">Religion</string>
+    <string name="career">Career</string>
+    <string name="social_life">Social Life</string>
+    <string name="travel">Travel</string>
+    <string name="health">Health</string>
+    <string name="fun">Fun</string>
+    <string name="finance">Finance</string>
+    <string name="education">Education</string>
+    <string name="body">Body</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="task">Task</string>
+    <string name="title_activity_new_task">NewTaskActivity</string>
+    <string name="note">Note</string>
+    <string name="save">Save</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="image">Image</string>
+    <string name="take_photo_or_choose">Take a photo or choose an image</string>
+    <string name="add_location">Add location</string>
+    <string name="set_due_date">Set a due date and time</string>
+    <string name="due_date">Due</string>
+    <string name="add_time_reminder">Add time reminders after setting up due date</string>
+    <string name="reminder">Reminder</string>
+    <string name="address">Address</string>
+    <string name="permission_required">Image permission is Requied</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose image</string>
+    <string name="new_task">New Task</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="complete">Complete</string>
+    <string name="due_date_title">Due Date</string>
+    <string name="created_at">Created at</string>
+    <string name="love">Love</string>
+    <string name="time">time</string>
+    <string name="date">date</string>
+    <string name="before">Before</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="categories_array">
+        <item>@string/family</item>
+        <item>@string/fun</item>
+        <item>@string/finance</item>
+        <item>@string/education</item>
+        <item>@string/love</item>
+        <item>@string/career</item>
+        <item>@string/social_life</item>
+        <item>@string/health</item>
+        <item>@string/travel</item>
+        <item>@string/religion</item>
+
+    </string-array>
+
+    <string-array name="unite_array">
+        <item>minutes</item>
+        <item>hours</item>
+        <item>days</item>
+    </string-array>
+    <string-array name="numbers_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="when_due_date">When due date</string>
+    <string name="set_due_date_first">Set Due Date First</string>
+    <string name="sign_out">logout</string>
+</resources>

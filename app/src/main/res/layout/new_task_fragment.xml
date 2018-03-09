@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:elevation="@dimen/app_bar_elevation"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlwaysCollapsed"
+            app:titleEnabled="false"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/padding_16"
+                android:gravity="center|start"
+                android:orientation="vertical"
+              >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task"
+                    android:layout_marginEnd="@dimen/margin_60"
+                    android:layout_marginStart="@dimen/margin_60"
+                    android:layout_marginTop="@dimen/padding_16"
+                    android:layout_marginBottom="@dimen/padding_16"
+                    />
+
+                <EditText
+                    android:id="@+id/new_task_name_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/margin_64"
+                    android:layout_marginStart="@dimen/margin_64"
+                    android:hint="@string/new_task"
+                    android:inputType="textCapSentences"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/space_8"
+                    android:paddingStart="@dimen/space_8"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="@dimen/text_size_24"
+                    android:layout_marginTop="@dimen/padding_16"/>
+                <TextView
+                    android:id="@+id/text_required_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title required"
+                    android:layout_marginEnd="@dimen/margin_64"
+                    android:layout_marginStart="@dimen/margin_64"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@android:color/holo_red_light"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/spinner_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/margin_64"
+                    android:layout_marginStart="@dimen/margin_64"
+                    android:layout_marginTop="@dimen/padding_16"
+                    android:text="2 due to day"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/new_task_scrolling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/note_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/note_btn"
+                    style="@style/NewTaskButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/note"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_marginTop="@dimen/padding_16"/>
+
+                <TextView
+                    android:id="@+id/note_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8"
+                    android:layout_marginStart="@dimen/space_8"
+                    android:text="@string/add_a_note"
+                    android:textSize="@dimen/text_size_14" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/image_layout"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/note_layout"
+                android:soundEffectsEnabled="true">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            <TextView
+                android:id="@+id/image_btn"
+                style="@style/NewTaskButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:text="@string/image"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginBottom="@dimen/space_8"
+            />
+
+            <TextView
+                android:id="@+id/image_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_16"
+
+                android:layout_marginEnd="@dimen/space_8"
+                android:layout_marginStart="@dimen/space_8"
+                android:layout_gravity="start|bottom"
+                android:text="@string/take_photo_or_choose"
+                android:textSize="@dimen/text_size_14" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/address_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_layout"
+                >
+            <TextView
+                android:id="@+id/address_btn"
+                style="@style/NewTaskButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/address"
+                android:textAppearance="?android:textAppearanceMedium"
+             />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_8"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/add_location"
+                android:textSize="@dimen/text_size_14"
+               />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/reminder_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_layout"
+                app:layout_goneMarginTop="@dimen/padding_16"
+                >
+            <TextView
+                android:id="@+id/reminder_btn"
+                style="@style/NewTaskButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/reminder"
+                android:textAppearance="?android:textAppearanceMedium"
+               />
+
+            <TextView
+                android:id="@+id/reminder_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_8"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/add_time_reminder"
+                android:textSize="@dimen/text_size_14"
+                />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/due_date_btn"
+                style="@style/NewTaskButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/due_date"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reminder_layout" />
+
+            <TextView
+                android:id="@+id/due_date_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_8"
+                android:layout_marginStart="@dimen/space_8"
+                android:text="@string/set_due_date"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/due_date_btn" />
+
+            <Button
+                android:id="@+id/date_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/time_btn"
+                app:layout_constraintTop_toBottomOf="@+id/due_date_btn"
+                tools:text="today"
+                android:textSize="@dimen/text_size_14"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:paddingStart="@dimen/space_8"
+                android:paddingEnd="@dimen/space_8"
+                android:hint="@string/date"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/time_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/due_date_btn"
+                tools:text="20:03"
+                android:textSize="@dimen/text_size_14"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:paddingStart="@dimen/space_8"
+                android:paddingEnd="@dimen/space_8"
+                android:hint="@string/time"
+                app:layout_constraintStart_toEndOf="@+id/date_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:visibility="gone"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

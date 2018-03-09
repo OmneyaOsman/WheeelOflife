@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "18804272046",
+    "firebase_url": "https://wheeeloflife.firebaseio.com",
+    "project_id": "wheeeloflife",
+    "storage_bucket": "wheeeloflife.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18804272046:android:ab2aa1020306150f",
+        "android_client_info": {
+          "package_name": "com.omni.wheeeloflife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18804272046-pnohv4k6e353d5ojjltijub9plvoh6bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omni.wheeeloflife",
+            "certificate_hash": "a78aee060e363b2dfdd3548e1f65aeeb11f6261f"
+          }
+        },
+        {
+          "client_id": "18804272046-ulo6jlhbmtb9071e6d9qd7up97aebl6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbh1KkPl3kuminuSlD5r8U6cya14Qjm-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18804272046-ulo6jlhbmtb9071e6d9qd7up97aebl6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

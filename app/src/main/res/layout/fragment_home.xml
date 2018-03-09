@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll_view">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/family_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/social_life_card"
+            app:layout_constraintEnd_toStartOf="@+id/religion_card"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/family_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fanily"
+                    app:backgroundTint="@color/pink"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/family"
+                    app:layout_constraintEnd_toEndOf="@id/family_cat_btn"
+                    app:layout_constraintStart_toStartOf="@id/family_cat_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/family_cat_btn" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/religion_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/career_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/family_card"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/religion_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_religion"
+                    app:backgroundTint="@color/light_green"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/religion" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/career_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/health_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/social_life_card"
+            app:layout_constraintTop_toBottomOf="@+id/family_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/career_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_career"
+                    android:text="@string/career"
+                    app:backgroundTint="@color/turbo"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/career" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/social_life_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/travel_card"
+            app:layout_constraintEnd_toStartOf="@+id/career_card"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/family_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/social_life_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_social_life"
+                    app:backgroundTint="@color/purple"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/social_life" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/travel_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/fun_card"
+            app:layout_constraintEnd_toStartOf="@+id/health_card"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/social_life_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/travel_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_travel"
+                    app:backgroundTint="@color/orange"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/travel" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/health_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/finance_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/travel_card"
+            app:layout_constraintTop_toBottomOf="@+id/social_life_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/health_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_heart_health"
+                    android:text="@string/health"
+                    app:backgroundTint="@color/blue"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/health" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fun_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/education_card"
+            app:layout_constraintEnd_toStartOf="@+id/finance_card"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/travel_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fun_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fun"
+                    android:text="@string/fun"
+                    app:backgroundTint="@color/deep_orange"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/fun" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/finance_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toTopOf="@+id/love_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/fun_card"
+            app:layout_constraintTop_toBottomOf="@+id/health_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/finance_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_financial"
+                    android:text="@string/finance"
+                    app:backgroundTint="@color/green"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/finance" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/education_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/love_card"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fun_card"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/education_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_education"
+                    app:backgroundTint="@color/brawn"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/education" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/love_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_marginEnd="@dimen/space_1"
+            android:layout_marginStart="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/education_card"
+            app:layout_constraintTop_toBottomOf="@+id/finance_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/love_cat_btn"
+                    style="@style/MainCategoriesButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_hearts"
+                    android:text="@string/love"
+                    app:backgroundTint="@color/red"
+                    app:borderWidth="0dp"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="normal" />
+
+                <TextView
+                    style="@style/CategoriesTitleStyle"
+                    android:text="@string/love" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

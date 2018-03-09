@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/framee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="due date "
+                android:layout_gravity="start"
+                android:textSize="@dimen/text_size_18"
+                android:layout_marginTop="@dimen/padding_16"
+                android:layout_marginStart="@dimen/space_8"
+                android:layout_marginEnd="@dimen/space_8"/>
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_action_edit"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/space_8"
+                android:layout_marginStart="@dimen/space_8"
+                android:layout_marginEnd="@dimen/space_8"/>
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/task_image"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/framee"
+        android:src="@drawable/pattern"
+        android:scaleType="fitXY"
+        android:background="@color/orange"
+        />
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_image"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        android:textSize="@dimen/text_size_24"
+        tools:text="@string/app_name"
+        android:layout_marginStart="@dimen/padding_16"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/brawn"
+        />
+
+    <TextView
+        android:id="@+id/task_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_16"
+        app:layout_constraintEnd_toStartOf="@+id/open_direction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_name"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        tools:text="@string/add_location"
+        android:drawableStart="@drawable/ic_action_location"
+        android:gravity="start"
+        android:drawablePadding="@dimen/space_8"
+        android:drawableTint="@color/orange"
+        android:textSize="@dimen/text_size_18"/>
+
+    <ImageButton
+        android:id="@+id/open_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task_location"
+        android:src="@drawable/ic_action_direction"
+        app:layout_constraintTop_toBottomOf="@+id/task_name"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/padding_16"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:tint="@color/orange"
+        />
+
+    <TextView
+        android:id="@+id/reminder_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder"
+        app:layout_constraintTop_toBottomOf="@+id/task_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:layout_marginTop="@dimen/padding_16"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/orange"
+        />
+
+    <TextView
+        android:id="@+id/reminder_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="@string/reminder"
+        app:layout_constraintTop_toBottomOf="@+id/reminder_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:layout_marginTop="@dimen/padding_16"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        />
+
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/note"
+        app:layout_constraintTop_toBottomOf="@+id/reminder_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:layout_marginTop="@dimen/padding_16"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/orange"
+        />
+
+    <ScrollView
+        android:id="@+id/scrolling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/note_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+        android:id="@+id/note_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/note"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:layout_marginTop="@dimen/padding_16"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/complete_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/complete"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_task"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrolling"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:textColor="@color/orange"
+        />
+
+    <Button
+        android:id="@+id/delete_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_marginStart="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/complete_task"
+        app:layout_constraintTop_toBottomOf="@+id/scrolling"
+        app:layout_goneMarginTop="@dimen/padding_16"
+        android:textColor="@color/orange"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
