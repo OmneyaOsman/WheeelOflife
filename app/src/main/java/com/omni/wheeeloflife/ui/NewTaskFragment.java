@@ -346,7 +346,7 @@ public class NewTaskFragment extends Fragment {
             if(task.getReminderUnite()!=null){
                 number = task.getReminderNumber();
                 unite = task.getReminderUnite();
-                reminder = number + " " + unite + " before due date";
+                reminder = number + " " + unite + " " +getString(R.string.before_due_date);
                 reminderTv.setText(reminder);
             }
         }
@@ -462,7 +462,7 @@ assert getActivity()!=null;
                     Intent callGPSSettingIntent = new Intent(
                             android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                     startActivity(callGPSSettingIntent);
-                    Toast.makeText(getActivity(), "your Location will help us to provide you with the direction on google Maps", Toast.LENGTH_LONG)
+                    Toast.makeText(getActivity(), R.string.permission_denied_msg, Toast.LENGTH_LONG)
                             .show();
                 }
                 break;
@@ -630,7 +630,7 @@ assert getActivity()!=null;
                 case REMINDER_RQUEST_CODE:
                     unite = data.getStringExtra("unite");
                     number = data.getIntExtra("number", 0);
-                    reminder = number + " " + unite + "before due date";
+                    reminder = number + " " + unite +" "+ getString(R.string.before_due_date);
                     reminderTv.setText(reminder);
                     break;
             }
@@ -667,13 +667,13 @@ assert getActivity()!=null;
                      @Override
                      public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
                          if (databaseError != null) {
-                             System.out.println("Data could not be saved " + databaseError.getMessage());
+                             System.out.println(getString(R.string.data_couldnt) + databaseError.getMessage());
                              if(reminder!=null){
                                  reminderBeforeInMiliSeconds = calculateTimeInMiliSeconds(unite, number);
                                  scheduleNotification(getNotification(), reminderBeforeInMiliSeconds);
                              }
                          } else {
-                             System.out.println("Data saved successfully.");
+                             System.out.println(getString(R.string.data_saved));
                          }
                      }
                  });
@@ -699,7 +699,7 @@ assert getActivity()!=null;
 
                      @Override
                      public void onCancelled(DatabaseError databaseError) {
-                         Log.e(TAG, "onCancelled", databaseError.toException());
+                         Log.e(TAG, getString(R.string.on_canceled), databaseError.toException());
                      }
                  });
              }

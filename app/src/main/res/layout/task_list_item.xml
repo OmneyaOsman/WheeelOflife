@@ -9,5 +9,5 @@
         android:layout_height="match_parent"
         android:padding="@dimen/space_8"
         android:textSize="@dimen/text_size_18"
-        android:text="TextView" />
+         />
 </LinearLayout>

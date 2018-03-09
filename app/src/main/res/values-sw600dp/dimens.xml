@@ -19,4 +19,5 @@
     <dimen name="space_1">2dp</dimen>
 
     <dimen name="widget_margin">16dp</dimen>
+    <dimen name="cover_height">150dp</dimen>
 </resources>

@@ -61,24 +61,12 @@
                     android:id="@+id/text_required_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="title required"
+                    android:text="@string/title_required"
                     android:layout_marginEnd="@dimen/margin_64"
                     android:layout_marginStart="@dimen/margin_64"
                     android:textSize="@dimen/text_size_12"
                     android:textColor="@android:color/holo_red_light"
                     android:visibility="gone"/>
-
-                <Spinner
-                    android:id="@+id/spinner_category_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginEnd="@dimen/margin_64"
-                    android:layout_marginStart="@dimen/margin_64"
-                    android:layout_marginTop="@dimen/padding_16"
-                    android:text="2 due to day"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textSize="@dimen/text_size_14" />
             </LinearLayout>
 
             <android.support.v7.widget.Toolbar
@@ -144,7 +132,7 @@
                     android:id="@+id/image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    />
+                    android:contentDescription="@string/choosen_image" />
 
             <TextView
                 android:id="@+id/image_btn"

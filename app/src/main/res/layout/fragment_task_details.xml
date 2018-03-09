@@ -37,7 +37,8 @@
                 android:background="@android:color/transparent"
                 android:padding="@dimen/space_8"
                 android:layout_marginStart="@dimen/space_8"
-                android:layout_marginEnd="@dimen/space_8"/>
+                android:layout_marginEnd="@dimen/space_8"
+                android:contentDescription="@string/edit" />
         </FrameLayout>
 
     </android.support.v7.widget.CardView>
@@ -45,14 +46,14 @@
     <ImageView
         android:id="@+id/task_image"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/cover_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/framee"
         android:src="@drawable/pattern"
         android:scaleType="fitXY"
         android:background="@color/orange"
-        />
+        android:contentDescription="@string/default_cover" />
 
     <TextView
         android:id="@+id/task_name"
@@ -98,7 +99,7 @@
         android:layout_marginStart="@dimen/padding_16"
         android:layout_marginEnd="@dimen/padding_16"
         android:tint="@color/orange"
-        />
+        android:contentDescription="@string/direction" />
 
     <TextView
         android:id="@+id/reminder_title"

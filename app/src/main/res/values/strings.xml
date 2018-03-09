@@ -129,4 +129,15 @@
     <string name="when_due_date">When due date</string>
     <string name="set_due_date_first">Set Due Date First</string>
     <string name="sign_out">logout</string>
+    <string name="edit">edit</string>
+    <string name="default_cover">default cover</string>
+    <string name="direction">direction</string>
+    <string name="choosen_image">choosen image</string>
+    <string name="title_required">title required</string>
+    <string name="time_reminder">Time Reminder</string>
+    <string name="on_canceled">onCancelled</string>
+    <string name="data_couldnt">Data could not be saved</string>
+    <string name="data_saved">Data saved successfully.</string>
+    <string name="before_due_date">before due date</string>
+    <string name="permission_denied_msg">your Location will help us to provide you with the direction on google Maps</string>
 </resources>
