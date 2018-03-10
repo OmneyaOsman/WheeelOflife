@@ -39,7 +39,8 @@
                     app:backgroundTint="@color/pink"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/family"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -81,7 +82,8 @@
                     app:backgroundTint="@color/light_green"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/religion"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -119,7 +121,8 @@
                     app:backgroundTint="@color/turbo"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/career"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -155,7 +158,8 @@
                     app:backgroundTint="@color/purple"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/social_life"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -191,7 +195,8 @@
                     app:backgroundTint="@color/orange"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/travel"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -228,7 +233,8 @@
                     app:backgroundTint="@color/blue"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/health"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -265,7 +271,8 @@
                     app:backgroundTint="@color/deep_orange"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/fun"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -302,7 +309,8 @@
                     app:backgroundTint="@color/green"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/finance"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -342,7 +350,8 @@
                     app:backgroundTint="@color/brawn"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/education"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"
@@ -380,7 +389,8 @@
                     app:backgroundTint="@color/red"
                     app:borderWidth="0dp"
                     app:elevation="@dimen/fab_elevation"
-                    app:fabSize="normal" />
+                    app:fabSize="normal"
+                    android:contentDescription="@string/love"/>
 
                 <TextView
                     style="@style/CategoriesTitleStyle"

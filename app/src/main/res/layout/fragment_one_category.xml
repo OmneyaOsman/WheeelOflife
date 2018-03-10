@@ -87,6 +87,7 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@drawable/ic_action_add"
         android:elevation="@dimen/fab_elevation"
-        app:borderWidth="0dp"/>
+        app:borderWidth="0dp"
+        android:contentDescription="@string/add_new_task"/>
 
 </android.support.design.widget.CoordinatorLayout>

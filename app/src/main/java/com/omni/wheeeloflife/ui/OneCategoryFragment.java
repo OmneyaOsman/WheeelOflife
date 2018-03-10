@@ -20,7 +20,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -46,7 +45,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static android.content.ContentValues.TAG;
 import static com.omni.wheeeloflife.utils.AppConfig.EXTRA_CIRCULAR_REVEAL_X;
 import static com.omni.wheeeloflife.utils.AppConfig.EXTRA_CIRCULAR_REVEAL_Y;
 import static com.omni.wheeeloflife.utils.AppConfig.toolbarColor;
@@ -328,7 +326,6 @@ public class OneCategoryFragment extends Fragment {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 totalCompleted =0;
                 totalDueDate=0;
-                Log.d(TAG, "onDataChange: " +dataSnapshot.getChildrenCount());
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     WheelTask task = postSnapshot.getValue(WheelTask.class);
                     assert task != null;
@@ -337,8 +334,8 @@ public class OneCategoryFragment extends Fragment {
                     if(task.getDueDate()!=null && !task.getDueDate().isEmpty())
                         totalDueDate++;
                 }
-                totalCompletedTv.setText(String.valueOf(totalCompleted).concat(" completed"));
-                totalDueDateTv.setText(String.valueOf(totalDueDate).concat(" due to date"));
+                totalCompletedTv.setText(String.valueOf(totalCompleted).concat(" ").concat(getString(R.string.completed)));
+                totalDueDateTv.setText(String.valueOf(totalDueDate).concat(" ").concat(getString(R.string.due_to_date)));
             }
 
             @Override

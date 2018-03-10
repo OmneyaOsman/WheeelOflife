@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void onSignedInInstialize(String userDisplayName) {
-        Toast.makeText(this, "Hello " +userDisplayName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.hello) +userDisplayName, Toast.LENGTH_SHORT).show();
 
     }
 
